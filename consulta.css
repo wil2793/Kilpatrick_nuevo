@@ -1,0 +1,39 @@
+table {
+    font-size: 12px;    
+    margin: 45px;     
+    width: 480px; text-align: left;    
+    border-collapse: collapse; 
+}
+
+th { 
+	letter-spacing: .5px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 13px;     
+	font-weight: normal;     
+	padding: 8px;     
+	background: #2B464B;
+    border-top: 4px solid white;    
+    border-bottom: 1px solid white; 
+    color: #fff; 
+    text-align: center;
+    font-size: 16px;
+}
+
+td { 
+	font-family: 'Abel', sans-serif;   
+	padding: 8px;     
+	background: #568c96;     
+	border-bottom: 1px solid #fff;
+    color: #fff;    
+    border-top: 1px solid transparent; 
+    font-size: 14px;
+}
+
+tr:hover td { 
+	background: #40585d; 
+	color: #fff; 
+}
+
+#icono {
+	text-align: center;
+}

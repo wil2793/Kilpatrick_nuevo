@@ -1,0 +1,39 @@
+body{
+	background-image: url(fondo2/director1.gif);
+}
+
+#caja1{
+	
+	width: 500px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+#cerrar{
+	border: 1px red solid;
+	float: right;
+	margin-top: 10px;
+	margin-right: 50px;
+	
+
+
+}
+
+#caja1 h1{
+	text-align: center;
+}
+
+#bttns{
+	text-align: center;
+}
+.btns{
+	border: 1px red solid;
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: yellow;
+	border-radius: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+

@@ -1,0 +1,64 @@
+
+#boton{
+	text-align: center;
+	padding-top: 20px;
+}
+
+#Cabecera{
+	background-color: #2B464B;
+	width: 100%;
+	height: 60px;
+	margin: auto;
+}
+
+.botones{
+	padding: 5px 10px;
+	background-color:#568c96;
+	color: #f3f7f8;
+	text-decoration: none;
+	font-family: 'Abel', sans-serif;
+	position: relative;
+	text-align: center;
+}
+
+.botones:before{
+	content: "";
+	display: block;
+	width: 0;
+	height: 3px;
+	background-color: white;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transition: .3s;
+}
+
+.botones:hover:before{
+	width: 100%;
+	left: 0;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+	text-align: center;
+	font-family: 'Abel', sans-serif;
+
+}
+
+p {
+	font-family: 'Abel', sans-serif;
+}
+
+span{
+	font-size: 50px;
+	font-family: 'Oswald', sans-serif;
+	color: white;
+}
+
+#tamañotxt {
+	width: 150px;
+}

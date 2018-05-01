@@ -1,0 +1,17 @@
+#fondo{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 1000px;
+	background-image: url(fondo2/director3.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+}
+
+#cuerpo{
+	width: 500px;
+	background-color: rgba(26,24,169, .6););
+	margin: auto;
+	margin-top: 10px;
+}

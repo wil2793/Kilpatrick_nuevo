@@ -1,0 +1,11 @@
+#cuerpo {
+	width: 40%;
+	background-color: rgba(43, 70, 75, .5);
+	margin: auto;
+	font-family: 'Abel', sans-serif;
+}
+
+p {
+	text-align: right;
+	width: 75%;
+}

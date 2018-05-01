@@ -1,0 +1,18 @@
+#textos {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#textos article {
+	width: 30%;
+	text-align: justify;
+	vertical-align: bottom;
+	margin-top: 0px;
+}
+
+h2 {
+	text-align: center;
+}

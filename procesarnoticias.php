@@ -1,0 +1,1 @@
+<script>alert("Noticia enviada")</script> <script>location.href='altanoticia.php'</script>
