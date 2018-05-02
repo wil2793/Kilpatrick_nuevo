@@ -31,7 +31,7 @@
   <?php 
 
   include ("conectar.php");
-  $sql=("SELECT matricula,nombrealumno,correo,genero,edad,grado,nombregrupo FROM alumno ORDER BY nombrealumno ASC");
+  $sql=("SELECT matricula,nombrealumno,correo,genero,edad,grado FROM alumno ORDER BY nombrealumno ASC");
   $resp=$conexion -> query($sql);
 
   ?>
@@ -40,14 +40,13 @@
       <table id='tabla' cellspacing='5'>
 <tr  align='center'>
       
-	<th>MATRICULA</th>
-	<th>NOMBRE</th>
-	<th>CORREO</th>
-	<th>GENERO</th>
-	<th>EDAD</th>
-	<th>GRADO</th>
-	<th>GRUPO</th>
-	<th colspan='2'>MOVIMIENTOS</th>
+  <th>MATRICULA</th>
+  <th>NOMBRE</th>
+  <th>CORREO</th>
+  <th>GENERO</th>
+  <th>EDAD</th>
+  <th>GRADO</th>
+  <th colspan='2'>MOVIMIENTOS</th>
 </tr>
 
   <?php 
@@ -62,10 +61,9 @@
     <td><?php echo $registro['genero'] ?></td>
     <td><?php echo $registro['edad'] ?></td>
     <td><?php echo $registro['grado'] ?></td>
-    <td><?php echo $registro['nombregrupo'] ?></td>
     
     <td><a href="editaralumno.php?editar=1&matricula=<?php echo $registro['matricula']; ?>"><img src='imagenes/lapiz.png' width=20 height=20></a></td> 
-    <td><a href="borraralumno.php?correo=<?php echo $registro['correo']; ?>"><img src='imagenes/Equis_roja.png' width=20 height=20></a></td>
+    <td><a href="borraralumno.php?matricula=<?php echo $registro['matricula']; ?>"><img src='imagenes/Equis_roja.png' width=20 height=20></a></td>
   </tr>
 
     <?php 

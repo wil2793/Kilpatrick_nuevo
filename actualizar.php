@@ -10,7 +10,6 @@ $rcontrasenia=$_GET['rcontrasenia'];
 $genero=$_GET['genero'];
 $edad=$_GET['edad'];
 $grado=$_GET['grado'];
-$nombregrupo=$_GET['nombregrupo'];
 
 echo $nombrealumno;
 echo "<br>";
@@ -27,7 +26,7 @@ echo $grado; echo "<br>";
 echo $nombregrupo; echo "<br>";
 
 
-$querys = ("UPDATE alumno SET nombrealumno='$nombrealumno', correo='$correo', contrasenia='$contrasenia', rcontrasenia='$rcontrasenia', genero='$genero', edad='$edad', grado='$grado', nombregrupo='$nombregrupo' WHERE matricula='$matricula'");
+$querys = ("UPDATE alumno SET nombrealumno='$nombrealumno', correo='$correo', contrasenia='$contrasenia', rcontrasenia='$rcontrasenia', genero='$genero', edad='$edad', grado='$grado' WHERE matricula='$matricula'");
 
 $resultado = $conexion -> query($querys) || die ("Ha occurrido un error al guardar los datos");
 	{

@@ -11,7 +11,7 @@
 	 <header id="cabecera2">
 	    <div id="cabeza2">
 	      <a class="bombon" href="veralumnos.php">Regresar</a>
-	      <a class="bombon" href="logoutAlumno.php">Cerrar Sesión</a>
+	      <a class="bombon" href="inicio.php">Cerrar Sesión</a>
 	    </div>
 	 </header>
 
@@ -30,7 +30,7 @@
 		$registro = mysqli_fetch_array($sql)
 
 	?>
-		<table border="1" align="center">
+		<table align="center">
 		<form name="form1" method="GET" action="
 			<?php 
 			if($_GET['editar']==1)
@@ -116,31 +116,27 @@
 					echo "selected";
 				 ?>
               >Tercero</option> 
+              <option value='4'
+              	<?php
+					if ($registro["grado"]=="4")
+					echo "selected";
+				 ?>
+              >Cuarto</option>
+              <option value='5'
+              	<?php
+					if ($registro["grado"]=="5")
+					echo "selected";
+				 ?>
+              >Quinto</option>
+              <option value='6'
+              	<?php
+					if ($registro["grado"]=="6")
+					echo "selected";
+				 ?>
+              >Sexto</option>
             </select> <br><br>
 
         </tr>
-
-          <label for="">Grupo:</label>
-            <select name='nombregrupo'> 
-              <option value='a' selected
-				<?php
-					if ($registro["nombregrupo"]=="a")
-					echo "selected";
-				 ?>
-              > A </option> 
-              <option value='c' selected
-				<?php
-					if ($registro["nombregrupo"]=="c")
-					echo "selected";
-				 ?>
-              > C</option> 
-              <option value='3sa' selected
-				<?php
-					if ($registro["nombregrupo"]=="3sa")
-					echo "selected";
-				 ?>
-              > 3SA </option>
-            </select> <br><br>
 
         <input id="bombon2" type="submit" name="actualizar" value="Registrar" size="0"> 
 		

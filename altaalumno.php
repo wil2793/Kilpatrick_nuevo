@@ -65,20 +65,9 @@
               <option value='1'>Primero</option>
               <option value='2'>Segundo</option>
               <option value='3'>Tercero</option> 
-            </select> <br><br>
-
-          <label for="">Grupo:</label>
-            <select name='nombregrupo' id="tamañotxt"> 
-              <?php 
-                while ($registro = $resp -> fetch_array(MYSQLI_BOTH))
-                  {
-              ?>
-
-                  <option value='<?php echo $registro['nombregrupo'] ?>' selected><?php echo $registro['nombregrupo'] ?></option> 
-
-              <?php 
-                  }
-              ?>
+              <option value='4'>Cuarto</option>
+              <option value='5'>Quinto</option>
+              <option value='6'>Sexto</option> 
             </select> <br><br>
 
         <input id="bombon2" type="submit" name="" value="Registrar" size="0"> 
