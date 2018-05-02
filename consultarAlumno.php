@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<title></title>
+	<title>Titulo</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="indexdirector.css">
 	<link rel="stylesheet" href="cabecerabtnizq.css">

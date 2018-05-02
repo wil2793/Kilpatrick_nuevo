@@ -10,7 +10,6 @@ $rcontrasenia=$_POST['rcontrasenia'];
 $genero=$_POST['genero'];
 $edad=$_POST['edad'];
 $grado=$_POST['grado'];
-$nombregrupo=$_POST['nombregrupo'];
 
 echo $nombrealumno;
 echo $matricula;
@@ -20,12 +19,11 @@ echo $rcontrasenia;
 echo $genero;
 echo $edad;
 echo $grado;
-echo $nombregrupo;
 
 $log = mysqli_query($conexion, "SELECT correo, contrasenia FROM `administrador` WHERE correo='$correo' AND contrasenia='$contrasenia' ");
 
 
-$consulta = "INSERT INTO alumno (matricula,nombrealumno,correo,contrasenia,rcontrasenia,genero,edad,grado,nombregrupo) VALUES('$matricula','$nombrealumno','$correo','$contrasenia','$rcontrasenia','$genero','$edad','$grado','$nombregrupo')";
+$consulta = "INSERT INTO alumno (matricula,nombrealumno,correo,contrasenia,rcontrasenia,genero,edad,grado) VALUES('$matricula','$nombrealumno','$correo','$contrasenia','$rcontrasenia','$genero','$edad','$grado')";
                           
 
 $resultado = $conexion -> query($consulta) || die ("Ha occurrido un error al guardar los datos");

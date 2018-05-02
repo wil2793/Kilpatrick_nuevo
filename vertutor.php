@@ -53,7 +53,7 @@
 			    <td><?php echo $registro['nombremaestro'] ?></td>
 			    <td><?php echo $registro['correo'] ?></td>
 			    
-			    <td><a href="editaradministrador.php?editar=1&correo=<?php echo $registro['correo']; ?>"><img src='imagenes/lapiz.png' width=20 height=20></a></td> 
+			    <td><a href="editartutor.php?editar=1&correo=<?php echo $registro['correo']; ?>"><img src='imagenes/lapiz.png' width=20 height=20></a></td> 
 			    <td><a href="borrar_maestro.php?nombremaestro=<?php echo $registro['nombremaestro']; ?>"><img src='imagenes/Equis_roja.png' width=20 height=20></a></td>
 			  </tr>
 
