@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="consulta.css">
 	<link rel="stylesheet" href="estilocabecera.css">
 	<link rel="stylesheet" href="cabecerabtnizq.css">
+	<link href="https://fonts.googleapis.com/css?family=Abel|Oswald" rel="stylesheet">
 </head>
 <body>
   <header id="cabecera2">
@@ -27,39 +28,35 @@
     </section>
   </center>
 			
+<?php 
+  
+  include ("conectar.php");
+  $sql=("SELECT nombremaestro,correo FROM maestro ORDER BY nombremaestro ASC");
+  $resp=$conexion -> query($sql);
+
+?>
+
 	<center>
-		<table id='tabla' cellspacing='5'>
-			<tr  align='center'> 
-				<td>NOMBRE</td>
-				<td>CORREO</td>		
+		<table>
+			<tr align='center'>          
+				<th>NOMBRE</th>
+				<th>CORREO</th>
 			</tr>
 
-			<tr bgcolor='#F5F6CE' align='center'>
-		          
-		        <td>Mario Moreno</td>
-		        <td>mario@hotmail.com</td>	
-			</tr>
-			
-			<tr bgcolor='#F5F6CE' align='center'>          
-		        <td>Manuel Perez</td>
-		        <td>manuel@hotmail.com</td>	
-			</tr>
-			
-			<tr bgcolor='#F5F6CE' align='center'>          
-		        <td>Juan Ramirez</td>
-		        <td>ramirez@hotmail.com</td>	
-			</tr>
+			  <?php 
+			    while ($registro = $resp -> fetch_array(MYSQLI_BOTH))
+			      {
+			  ?>
 
-			<tr bgcolor='#F5F6CE' align='center'>      
-		        <td>Geovanni Mezquita</td>
-		        <td>geovanni@hotmail.com</td>
-		    </tr>
-			
-			<tr bgcolor='#F5F6CE' align='center'>
-		        <td>daniel</td>
-		        <td>daniel@hotmail.com</td>
-		    </tr>
+			  <tr>
+			    <td><?php echo $registro['nombremaestro'] ?></td>
+			    <td id="icono"><?php echo $registro['correo'] ?></td>
+			  </tr>
 
+			    <?php 
+			      }
+			   ?>
+		
 		</table>
 	</center>
 </body>

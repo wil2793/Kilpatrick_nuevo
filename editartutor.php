@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="cabecerabtnizq.css">
 	<link rel="stylesheet" href="estilocabecera.css">
+	<link href="https://fonts.googleapis.com/css?family=Abel|Oswald" rel="stylesheet">
 </head>
  <body>
 
@@ -16,7 +17,7 @@
 	 </header>
 
 	<div>
-		<h1>Actualizar datos del Maestro</h1>
+		<h1>Actualizar datos del maestro</h1>
 	</div>
 
 	<?php 
@@ -30,8 +31,8 @@
 		$registro = mysqli_fetch_array($sql)
 
 	?>
-
-	<table align="center">
+<center>
+	<table align="right">
 		<form name="form1" method="GET" action="
 			<?php 
 			if($_GET['editar']==1)
@@ -60,13 +61,10 @@
        		<input type="password" name="rcontrasenia" placeholder="Repita la contraseña" value="<?php echo $registro['rcontrasenia'];?>"><br><br>
         </tr>
 
-        <input id="bombon2" type="submit" name="actualizar" value="Registrar"> 
+        <input id="bombon2" type="submit" name="actualizar" value="Actualizar"> 
 		
 		</form>
-		</table>
-
-	
-
+	</table>
 </center>
 </body>
 </html>

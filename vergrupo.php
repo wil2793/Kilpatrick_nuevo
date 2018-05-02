@@ -55,7 +55,7 @@
     <td><?php echo $registro['nombregrupo'] ?></td>
     <td><?php echo $registro['nombremaestro'] ?></td>
     <td><?php echo $registro['nombremateria'] ?></td> 
-    <td id="icono"><a href="editaradministrador.php?editar=1&correo=<?php echo $registro['correo']; ?>"><img src='imagenes/lapiz.png' width=20 height=20></a></td> 
+    <td id="icono"><a href="editargrupo.php?editar=1&nombregrupo=<?php echo $registro['nombregrupo']; ?>"><img src='imagenes/lapiz.png' width=20 height=20></a></td> 
     <td id="icono"><a href="borrargrupo.php?nombregrupo=<?php echo $registro['nombregrupo']; ?>"><img src='imagenes/Equis_roja.png' width=20 height=20></a></td>
   </tr>
 

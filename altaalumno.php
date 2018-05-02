@@ -45,7 +45,7 @@
         <input type="text" name="nombrealumno" placeholder="Ingresa Nombre"><br><br>
 
         <label for="">Correo:</label>
-        <input type="text" name="correo" class="bota" placeholder="Ingresa correo"><br><br>
+        <input type="text" name="correo" placeholder="Ingresa correo"><br><br>
 
         <label for="">Contraseña:</label>
         <input type="password" name="contrasenia" placeholder="Ingresa contraseña"><br><br>

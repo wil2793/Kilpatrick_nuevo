@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
   <link rel="stylesheet" href="estilocabecera.css">
   <link rel="stylesheet" href="cabecerabtnizq.css">
-	<link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Abel|Oswald" rel="stylesheet">
 </head>
 <body>
 

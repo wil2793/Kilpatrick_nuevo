@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="cabecerabtnizq.css">
 	<link rel="stylesheet" href="estilocabecera.css">
+	<link href="https://fonts.googleapis.com/css?family=Abel|Oswald" rel="stylesheet">
 </head>
  <body>
 
@@ -30,7 +31,8 @@
 		$registro = mysqli_fetch_array($sql)
 
 	?>
-		<table align="center">
+	<center>
+		<table>
 		<form name="form1" method="GET" action="
 			<?php 
 			if($_GET['editar']==1)
@@ -138,7 +140,7 @@
 
         </tr>
 
-        <input id="bombon2" type="submit" name="actualizar" value="Registrar" size="0"> 
+        <input id="bombon2" type="submit" name="actualizar" value="Actualizar"> 
 		
 		</form>
 		</table>

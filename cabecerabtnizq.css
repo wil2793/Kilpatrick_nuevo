@@ -60,3 +60,11 @@ form {
 	width: 320px;
 	font-family: 'Abel', sans-serif;
 }
+
+input {
+	font-family: 'Abel', sans-serif;
+}
+
+label {
+	font-family: 'Abel', sans-serif;
+}

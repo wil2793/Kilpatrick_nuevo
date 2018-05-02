@@ -33,7 +33,7 @@ if(isset($_SESSION['correo'])) {?>
 
 	   <div >
 	       		
-	       		<a class="botones" href="evaluargrupo.php">Asingnar Calificaciones</a>
+	       		<a class="botones" href="consultarCalificacion.php">Asingnar Calificaciones</a>
 	       		<a class="botones" href="evaluargrupoconsulta.php">Consultar Calificaciones</a><br>
 	   </div>
 						

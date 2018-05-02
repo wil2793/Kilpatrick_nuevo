@@ -25,7 +25,7 @@
 
   <center>  
     <section>
-      <h1>Registrar Maestro</h1>
+      <h1>Registrar maestro</h1>
     </section>
 
     <section>
