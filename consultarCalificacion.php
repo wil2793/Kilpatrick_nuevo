@@ -1,3 +1,9 @@
+<?php
+session_start();
+include 'conectar.php';
+
+if(isset($_SESSION['correo'])) {?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -85,3 +91,9 @@
 			
 	</body>
 </html>
+
+<?php
+}else{
+  echo '<script> window.location="iniciomaestro.php"; </script>';
+}
+?>

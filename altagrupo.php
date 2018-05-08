@@ -14,7 +14,7 @@
   <header id="cabecera2">
     <div id="cabeza2">
       <a class="bombon" href="consultaGrupos.php">Regresar</a>
-      <a class="bombon" href="inicioadministrador.php">Cerrar Sesión</a>
+      <a class="bombon" href="logout.php">Cerrar Sesión</a>
     </div>
   </header>
 

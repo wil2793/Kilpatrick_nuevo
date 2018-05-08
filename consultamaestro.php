@@ -1,3 +1,9 @@
+<?php
+session_start();
+include 'conectar.php';
+
+if(isset($_SESSION['correo'])) {?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -12,8 +18,8 @@
 
 	<header id="cabecera2">
 	    <div id="cabeza2">
-	      <a class="bombon" href="indexadmin.php">Regresar</a>
-	      <a class="bombon" href="inicioadministrador.php">Cerrar Sesión</a>
+	      	<a class="bombon" href="<?=$_SERVER["HTTP_REFERER"]?>">Regresar</a>
+     		<a class="bombon" href="logout.php">Cerrar Sesión</a>
 	    </div>
 	</header>
 
@@ -28,3 +34,9 @@
 		
 </body>
 </html>
+
+<?php
+}else{
+	echo '<script> window.location="inicioadministrador.php"; </script>';
+}
+?>

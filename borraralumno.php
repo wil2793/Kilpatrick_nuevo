@@ -1,10 +1,10 @@
 <?php
 	include ("conectar.php");
 
-	$correo=$_GET['correo'];
-	echo $correo;
+	$matricula=$_GET['matricula'];
+	echo $matricula;
 
-	$consulta = "DELETE FROM alumno WHERE correo='$correo'";
+	$consulta = "DELETE FROM alumno WHERE matricula='$matricula'";
 	$resultado = $conexion -> query($consulta) || die ("Ha ocurrido un error al eliminar los datos");
 
 	if($resultado)

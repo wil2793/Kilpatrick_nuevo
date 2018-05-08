@@ -18,7 +18,7 @@ if(isset($_SESSION['correo'])) {?>
 	<body>
 	<header id="cabecera2">
 	    <div id="cabeza2">
-	      <a class="bombon" href="evaluargrupoconsulta.php">Regresar</a>
+	      <a class="bombon" href="<?=$_SERVER["HTTP_REFERER"]?>">Regresar</a>
 	      <a class="bombon" href="logoutMaestro.php">Cerrar Sesión</a>
 	    </div>
  	</header>

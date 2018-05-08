@@ -41,7 +41,11 @@
 			} 
 				else
 			{
+<<<<<<< HEAD
+				echo "vertutor.php";
+=======
 				echo "vervutor.php";
+>>>>>>> 1f7ee35d79653dd452809ee433c7c182bdd2a2d7
 			}   
 		?> ">
 

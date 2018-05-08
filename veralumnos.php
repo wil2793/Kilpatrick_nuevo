@@ -12,13 +12,13 @@
   <header id="cabecera2">
     <div id="cabeza2">
       <a class="bombon" href="consultarAlumno.php">Regresar</a>
-      <a class="bombon" href="inicioadministrador.php">Cerrar Sesión</a>
+      <a class="bombon" href="logout.php">Cerrar Sesión</a>
     </div>
   </header>
                   
   <section>
     <center>  
-      <img id="logo1" src="imagenes/logo.jpg" alt=""><br>
+      <img  src="imagenes/logo.jpg" width="250" height="250" alt=""><br>
     </center>
   </section>
 

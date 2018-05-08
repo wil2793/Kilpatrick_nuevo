@@ -1,3 +1,8 @@
+<?php
+session_start();
+include 'conectar.php';
+
+if(isset($_SESSION['correo'])) {?>
 
 <!DOCTYPE html>
 <html>
@@ -13,7 +18,7 @@
 
 	<header id="cabecera2">
 	    <div id="cabeza2">
-	      <a class="bombon" href="indexmaestro.php">Regresar</a>
+	      <a class="bombon" href="<?=$_SERVER["HTTP_REFERER"]?>">Regresar</a>
 	      <a class="bombon" href="logoutMaestro.php">Cerrar Sesión</a>
 	    </div>
  	</header>
@@ -33,6 +38,7 @@
          <input type="text" name="materia">
          <br>
          <br>
+         
          <center><input class="botones" name="enviar" type="submit" value="Entrar" onclick="valida_envia()"></center> </center> 
           </form>
 </div>
@@ -42,3 +48,9 @@
 	
 	</body>
 </html>
+
+<?php
+}else{
+  echo '<script> window.location="iniciomaestro.php"; </script>';
+}
+?>

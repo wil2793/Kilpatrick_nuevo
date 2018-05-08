@@ -2,7 +2,7 @@
 
 include ("conectar.php");
 
-$matricula =$_POST['matricula'];
+$matricula=$_POST['matricula'];
 $nombrealumno =$_POST['nombrealumno'];
 $nombremateria=$_POST['nombremateria'];
 $calificacion=$_POST['calificacion'];
